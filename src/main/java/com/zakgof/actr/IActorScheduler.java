@@ -7,6 +7,8 @@ public interface IActorScheduler extends AutoCloseable {
 
     default void actorDisposed(Object actorId) {
     }
+    
+    // int getQueueCapacity();
 
     void schedule(Runnable task, Object actorId);
 
